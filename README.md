@@ -1,6 +1,6 @@
 # Modern Flat UI
 
-A modern, flat design theme for your web application. This theme features a clean and minimalistic design, with a focus on usability and simplicity.
+A modern, flat design theme for your windows application. This theme features a clean and minimalistic design, with a focus on usability and simplicity.
 
 ## Feature
 
