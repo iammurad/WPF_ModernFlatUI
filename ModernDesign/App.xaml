@@ -2,6 +2,8 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:ModernDesign"
+             xmlns:ViewModel="clr-namespace:ModernDesign.MVVM.ViewModel"
+             xmlns:view="clr-namespace:ModernDesign.MVVM.View"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <ResourceDictionary>
@@ -9,6 +11,14 @@
                 <ResourceDictionary Source="Theme/MenuButtonTheme.xaml"/>
                 <ResourceDictionary Source="Theme/TextboxTheme.xaml"/>
             </ResourceDictionary.MergedDictionaries>
+
+            <DataTemplate DataType="{x:Type ViewModel:HomeViewModel}" >
+                <view:HomeView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type ViewModel:DiscoveryViewModel}" >
+                <view:DiscoveryView/>
+            </DataTemplate>
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>

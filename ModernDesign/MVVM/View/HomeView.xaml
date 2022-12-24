@@ -1,0 +1,112 @@
+﻿<UserControl x:Class="ModernDesign.MVVM.View.HomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ModernDesign.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <StackPanel>
+        <TextBlock Text="Discover"
+                   Foreground="White"
+                   HorizontalAlignment="Left"
+                   FontSize="20"
+                   Margin="0,0,0,20"/>
+        
+        <StackPanel Orientation="Horizontal"
+                    Margin="0,0,0,10">
+            <Border Width="400" 
+                    Height="200">
+                
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="gray" Offset="0"/>
+                        <GradientStop Color="#3aa0ff" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,400,200"/>
+                </Border.Clip>
+
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Text="You can &#x0a;be powerfull"
+                                   Foreground="White"
+                                   FontSize="28"
+                                   Margin="20,10,10,0"/>
+
+                        <TextBlock Text="Get started today!"
+                                   Foreground="White"
+                                   FontSize="18"
+                                   Margin="20,10,10,0"/>
+                    </StackPanel>
+                    <Image Width="250"
+                           Height="250" Margin="178,10,-28,-60" Source="/MVVM/View/img6.png"
+                           />
+                </Grid>
+            </Border>
+
+            <Border
+                Width="200"
+                Height="200"
+                CornerRadius="10"
+                Margin="50,0,0,0"
+                >
+                
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#ffc554" Offset="0"/>
+                        <GradientStop Color="gray" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+            </Border>
+           
+        </StackPanel>
+        <StackPanel>
+
+
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="Margin" Value="15,0,0,0"/>
+                </Style>
+            </StackPanel.Resources>
+            <TextBlock Text="Most Matched"
+                   Foreground="White"
+                   FontSize="20"
+                   HorizontalAlignment="Left"
+                   Margin="0,0,0,20"/>
+        
+            <StackPanel Orientation="Horizontal">
+                <Border Width="150"
+                        Height="150"
+                        Background="#844eff"
+                        CornerRadius="10"
+                        Margin="0"
+                        />
+                <Border Width="150"
+                        Height="150"
+                        Background="#4e99ff"
+                        CornerRadius="10"
+                        />
+                <Border Width="150"
+                        Height="150"
+                        Background="#4eff91"
+                        CornerRadius="10"
+                        />
+                <Border Width="150"
+                        Height="150"
+                        Background="#ecff4e"
+                        CornerRadius="10"
+                        />
+            </StackPanel>
+        
+        
+        
+        
+        </StackPanel>
+
+        
+    </StackPanel>
+</UserControl>
