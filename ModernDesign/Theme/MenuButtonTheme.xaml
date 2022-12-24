@@ -7,13 +7,14 @@
         <Style.Setters>
             <Setter Property="Template">
                 <Setter.Value>
-                    <ControlTemplate>
+                    <ControlTemplate TargetType="RadioButton">
                         <Grid VerticalAlignment="Stretch"
                               HorizontalAlignment="Stretch"
                               Background="{TemplateBinding Background}"
                               >
-                            <TextBlock Text="Hello"
+                            <TextBlock Text="{TemplateBinding Property=Content}"
                                        VerticalAlignment="Center"
+                                       Margin="50,0,0,0"
                                        />
                             
                         </Grid>
@@ -25,10 +26,9 @@
         </Style.Setters>
 
         <Style.Triggers>
-            <Trigger Property="IsChecked" Value="True" 
-                
+            <Trigger Property="IsChecked" Value="True" >
                      <Setter Property="Background" Value="#22202F"/>
-                />
+            </Trigger>
         </Style.Triggers>
     </Style>
     
