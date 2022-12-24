@@ -64,7 +64,11 @@
                 VerticalAlignment="Center"
                 HorizontalAlignment="Left"
                 Margin="5"
+                Style="{StaticResource ModernTextBox }"
                 />
+
+
+            
         </Grid>
     </Border>
 </Window>
