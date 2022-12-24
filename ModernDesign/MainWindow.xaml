@@ -5,9 +5,43 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ModernDesign"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="141,104,0,0" VerticalAlignment="Top"/>
+        Title="MainWindow" Height="600" Width="920"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True">
+    <Border Background="#272537"
+            CornerRadius="20">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
 
-    </Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+                <RowDefinition />
+
+            </Grid.RowDefinitions>
+
+            <TextBlock
+                       Text="Modern UI"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       Foreground="White"
+                       FontSize="22"
+                       Margin="20,0,0,0"
+                       />
+
+            <StackPanel Grid.Row="1">
+                <RadioButton
+                    Content="Home"
+                    Foreground="White"
+                    FontSize="14"
+                    Height="50"
+                    
+                    />
+            </StackPanel>
+        </Grid>
+    </Border>
 </Window>
